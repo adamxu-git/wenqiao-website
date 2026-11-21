@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="问樵是一个人与人之间的需求撮合平台。了解问者与樵者如何找到彼此，以及问樵的运营进展和开发计划。">
+  <meta name="theme-color" content="#111e18">
+  <title>问樵 WenQiao · 上海问樵网络科技有限公司</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDggNTY0IiB3aWR0aD0iNjQ4IiBoZWlnaHQ9IjU2NCI+CiAgPHBhdGggZD0iTSA0MzksMzU5IEwgNDMwLDM2NCBMIDQyOCwzNjggTCA0MDUsMzg0IEwgMzc5LDQxMyBMIDM3Miw0MTggTCAzMTUsNDg3IEwgMjc3LDUzNyBMIDQwNiw1MzcgTCA0MjMsNTM1IEwgNDQzLDUyOSBMIDQ1NSw1MjMgTCA0NjksNTEzIEwgNDc4LDUwNCBMIDQ4OCw0OTAgTCA0OTQsNDc4IEwgNDk5LDQ2MiBMIDUwMSw0NDkgTCA0OTYsNDQ2IEwgNDkzLDQ0MCBMIDQ4NCw0MzAgTCA0NjQsMzk4IEwgNDU4LDM5MiBMIDQ1NCwzODMgWiIgZmlsbD0iIzdCOUU4QSIvPgogIDxwYXRoIGQ9Ik0gMjU1LDEwMyBMIDI1NSwxMDggTCAyNDksMTA5IEwgMjQ5LDExMyBMIDI0NCwxMTQgTCAyNDUsMTI3IEwgMjQyLDEyOCBMIDI0NCwxMzkgTCAyNjcsMTU0IEwgMzAwLDE2MiBMIDM3NiwxNjMgTCA0MDYsMTY2IEwgNDMyLDE3NSBMIDQ0MywxODUgTCA0NTMsMjA3IEwgNDU3LDIzMSBMIDQ1NywzODcgTCA0NjEsMzk0IEwgNDY3LDM5NyBMIDQ2Nyw0MDIgTCA0ODksNDM0IEwgNDk0LDQzNyBMIDQ5OCw0NDcgTCA1MDEsNDQ3IEwgNTAwLDIyMSBMIDQ5MiwxODQgTCA0NzcsMTU1IEwgNDYzLDEzOSBMIDQ0OCwxMjggTCA0MTEsMTE0IEwgMzczLDEwOSBMIDI5NywxMDcgWiIgZmlsbD0iIzVDM0ExRSIvPgogIDxwYXRoIGQ9Ik0gNDUwLDIzMiBMIDQxNCwyMzQgTCAyMTMsMjgyIEwgMjEzLDI5MSBMIDI1MCwyODYgTCAyNjAsMjg3IEwgMjYwLDMyOCBMIDI1NiwzMzIgTCAyNTMsMzgxIEwgMjcyLDM4MSBMIDI2OSwzMzEgTCAyNjQsMzI1IEwgMjY0LDI4NiBMIDI3MiwyODMgTCAzMTIsMjc5IEwgMzEzLDI4NSBMIDMwOSwzMDIgTCAzMTQsMzEyIEwgMzE0LDMxOSBMIDMwMSwzNDYgTCAzMTQsMzUyIEwgMzE1LDM3MSBMIDMyMCwzODAgTCAzMjIsMzkyIEwgMzI3LDM5NSBMIDM0NSwzOTUgTCAzNjQsMzkxIEwgMzcyLDQxNSBMIDM3NSw0MTUgTCA0MDQsMzgzIEwgNDI3LDM2NyBMIDQyNCwzNDggTCA0MjQsMjY0IEwgNDUwLDI2MCBaIiBmaWxsPSIjNUMzQTFFIi8+CiAgPHBhdGggZD0iTSAxNDYsMTY2IEwgMTQxLDE3MSBMIDEzMiwxNzEgTCAxMzAsMTc2IEwgMTMwLDE4NiBMIDEyNCwxODggTCAxMTcsMjk0IEwgMTE0LDM5MyBMIDExNSw0MzMgTCAxMjEsNDYzIEwgMTI3LDQ3OCBMIDEzNCw0NzcgTCAxMzcsNDg0IEwgMTQxLDQ4NCBMIDE0Miw0NzggTCAxNDYsNDc4IEwgMTQ4LDQ4MSBMIDE1Niw0ODAgTCAxNTcsNDg0IEwgMTYxLDQ4NCBMIDE2Niw0NzEgTCAxNjcsNDYwIEwgMTcyLDQ1OSBMIDE3Myw0NjggTCAxNzAsNDg2IEwgMTcyLDQ4NiBMIDE4MCw0NjEgTCAxODQsNDI3IEwgMTc3LDIzMiBMIDE3MSwxODQgTCAxNjcsMTg0IEwgMTY1LDE4MiBMIDE2NSwxNzQgTCAxNjIsMTY5IEwgMTU2LDE2OSBMIDE1MywxNjYgWiIgZmlsbD0iIzVDM0ExRSIvPgogIDxwYXRoIGQ9Ik0gMTcyLDY2IEwgMTcwLDY5IEwgMTY5LDY5IEwgMTY2LDcyIEwgMTY1LDcyIEwgMTY1LDc0IEwgMTY0LDc2IEwgMTYxLDc5IEwgMTU4LDc5IEwgMTUxLDg2IEwgMTUwLDg2IEwgMTQ4LDg4IEwgMTQ4LDkyIEwgMTQ2LDkzIEwgMTQ2LDEwMCBMIDE0OSwxMDYgTCAxNjIsMTE5IEwgMTYzLDExOSBMIDE2NywxMjMgTCAxNjgsMTIzIEwgMTc2LDEzMCBMIDE3NywxMzAgTCAxODAsMTMzIEwgMTgxLDEzMyBMIDE4NCwxMzYgTCAxODUsMTM2IEwgMTg5LDE0MCBMIDE5MCwxNDAgTCAyMDUsMTU0IEwgMjA1LDE1NSBMIDIwOSwxNTkgTCAyMDksMTYwIEwgMjEzLDE2NSBMIDIxNywxNzMgTCAyMTcsMTc1IEwgMjE4LDE3NyBMIDIyMCwxNzcgTCAyMjEsMTc2IEwgMjIxLDE2OSBMIDIyMiwxNjggTCAyMjIsMTU2IEwgMjIxLDE1NSBMIDIyMSwxNDQgTCAyMjAsMTQzIEwgMjIwLDEzNyBMIDIxOSwxMzYgTCAyMTksMTMyIEwgMjE4LDEzMSBMIDIxOCwxMjcgTCAyMTcsMTI2IEwgMjE3LDEyMiBMIDIxNiwxMjEgTCAyMTYsMTE4IEwgMjE1LDExNyBMIDIxNSwxMTUgTCAyMTQsMTE0IEwgMjE0LDExMiBMIDIxMywxMTEgTCAyMTMsMTA5IEwgMjEyLDEwOCBMIDIxMSwxMDMgTCAyMDksMTAwIEwgMjA5LDk4IEwgMjA0LDg4IEwgMjAyLDg2IEwgMTk5LDgwIEwgMTkwLDcwIEwgMTg5LDcwIEwgMTg3LDY4IEwgMTgzLDY2IFoiIGZpbGw9IiM1QzNBMUUiLz4KICA8cGF0aCBkPSJNIDU3NiwyMjcgTCA1NjAsMjI3IEwgNTU5LDIyOCBMIDUzOCwyMjggTCA1MzcsMjI5IEwgNTE1LDIyOSBMIDUxNCwyMzAgTCA1MDcsMjMwIEwgNTA3LDI1MiBMIDUxMCwyNTIgTCA1MTEsMjUxIEwgNTE3LDI1MSBMIDUxOCwyNTAgTCA1MjMsMjUwIEwgNTI0LDI0OSBMIDUzMCwyNDkgTCA1MzEsMjQ4IEwgNTM3LDI0OCBMIDUzOCwyNDcgTCA1NDMsMjQ3IEwgNTQ0LDI0NiBMIDU1MCwyNDYgTCA1NTEsMjQ1IEwgNTU3LDI0NSBMIDU1OCwyNDQgTCA1NjQsMjQ0IEwgNTY1LDI0MyBMIDU3MSwyNDMgTCA1NzIsMjQyIEwgNTc2LDI0MiBaIiBmaWxsPSIjNUMzQTFFIi8+Cjwvc3ZnPg==">
+  <style>
+    :root {
+      color-scheme: light;
+      --night: #111e18;
+      --pine: #284735;
+      --paper: #f5f0e5;
+      --ink: #182b20;
+      --muted: #48594c;
+      --light: #f5f0e5;
+      --muted-light: #c2cfc0;
+      --accent: #d7efb2;
+      --line: #1c382b32;
+      --dark-line: #dae7d031;
+      --body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      --serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", Georgia, serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.75 var(--body); }
+    section[id] { scroll-margin-top: 1.2rem; }
+    h1, h2, h3, p, blockquote, figure, dl, dd, ol, ul { margin: 0; }
+    h1, h2, h3 { line-height: 1.24; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, summary:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    svg { display: block; }
+    .symbol-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .shell { width: min(100% - 6rem, 76rem); margin-inline: auto; }
+    .dark { background: var(--night); color: var(--light); }
+    .skip {
+      position: fixed;
+      z-index: 5;
+      inset: .75rem auto auto .75rem;
+      padding: .55rem 1rem;
+      background: var(--accent);
+      color: var(--night);
+      transform: translateY(-160%);
+    }
+    .skip:focus { transform: translateY(0); }
+
+    .topbar {
+      min-height: 5.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      border-bottom: 1px solid var(--dark-line);
+    }
+    .lockup { display: inline-flex; align-items: center; gap: .65rem; }
+    .mark-chip {
+      display: grid;
+      place-items: center;
+      width: 2.35rem;
+      height: 2.35rem;
+      flex: none;
+      border-radius: .58rem;
+      background: #f2eadd;
+    }
+    .mark-chip svg { width: 92%; height: 92%; }
+    .brand-name { font-weight: 750; font-size: 1.14rem; letter-spacing: .08em; white-space: nowrap; }
+    .latin { font-size: .76rem; letter-spacing: .17em; font-weight: 700; }
+    .topbar .latin { color: var(--muted-light); }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 2rem; color: var(--muted-light); font-size: .94rem; }
+    nav a:hover, footer a:hover { text-decoration: underline; text-underline-offset: .3em; }
+
+    .hero-area {
+      background:
+        radial-gradient(ellipse at 79% 35%, #314d3b, transparent 54%),
+        radial-gradient(ellipse at 11% 100%, #1d3427, transparent 58%),
+        var(--night);
+    }
+    .hero {
+      min-height: 34rem;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+      padding-block: 3.7rem 4.3rem;
+    }
+    .kicker { color: var(--accent); font-weight: 650; letter-spacing: .12em; }
+    h1 {
+      font: 700 clamp(3.2rem, 6vw, 6.2rem)/1.12 var(--serif);
+      letter-spacing: -.058em;
+      margin-top: .95rem;
+    }
+    h1 span { display: block; color: var(--accent); }
+    .hero-copy > p:not(.kicker) { max-width: 29em; color: var(--muted-light); margin-top: 1.35rem; font-size: 1.06rem; }
+    .cta {
+      display: inline-block;
+      margin-top: 1.55rem;
+      padding: .58rem 1.15rem;
+      border-radius: .42rem;
+      background: var(--accent);
+      color: #17281e;
+      font-weight: 750;
+      transition: background .2s, transform .2s;
+    }
+    .cta:hover { background: #eef9db; transform: translateY(-2px); }
+
+    .brand-art {
+      min-height: 27rem;
+      display: grid;
+      place-content: center;
+      justify-items: center;
+      gap: 1.15rem;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding: 2rem;
+      border: 1px solid #e1edd23d;
+      border-radius: 1.5rem;
+      background: radial-gradient(ellipse at 50% 46%, #7b9471 0, #45624b 39%, #21382c 79%);
+    }
+    .brand-art::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background:
+        repeating-linear-gradient(0deg, transparent 0 33px, #f2f4df12 33px 34px),
+        repeating-linear-gradient(90deg, transparent 0 33px, #f2f4df12 33px 34px);
+      mask-image: radial-gradient(ellipse at center, #000 28%, transparent 86%);
+    }
+    .brand-art::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 76%;
+      height: 45%;
+      top: 25%;
+      left: 12%;
+      border: 1px solid #f7f3d955;
+      border-radius: 50%;
+      transform: rotate(-19deg);
+    }
+    .seal {
+      display: grid;
+      place-items: center;
+      width: clamp(10rem, 18vw, 15rem);
+      aspect-ratio: 1;
+      padding: 1.25rem;
+      border: 1px solid #fff5da;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at 42% 34%, #f9f4df, #eae0bd);
+      box-shadow: 0 0 0 .62rem #e1edc02a, 0 1rem 3rem #14241966, 0 0 4rem #e0e8a855;
+      animation: settle .75s cubic-bezier(.2, .75, .2, 1) both;
+    }
+    .seal svg { width: 100%; height: 100%; }
+    .brand-art figcaption { text-align: center; }
+    .brand-art strong {
+      display: inline-block;
+      font: 700 2.2rem/1.1 var(--serif);
+      letter-spacing: .23em;
+      padding-left: .23em;
+    }
+    .brand-art .latin { display: block; margin-top: .25rem; letter-spacing: .26em; color: #e4eddc; }
+    @keyframes settle {
+      from { opacity: 0; transform: translateY(11px) scale(.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .section { padding-block: clamp(3.3rem, 7vw, 6rem); }
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(2.4rem, 7vw, 6.5rem);
+      align-items: start;
+    }
+    .divider { border-top: 1px solid var(--line); }
+    h2 { font: 700 clamp(2rem, 3.65vw, 3.45rem)/1.18 var(--serif); letter-spacing: -.045em; }
+    h3 { font-size: 1.16rem; }
+    .section p, .section li, .section dd { color: var(--muted); }
+    .lead { margin-top: 1.14rem; }
+    .line-quote {
+      margin-top: 1.7rem;
+      border-left: 3px solid #77927c;
+      padding-left: 1.1rem;
+    }
+    .line-quote blockquote { font: 700 clamp(1.35rem, 2.4vw, 2rem)/1.4 var(--serif); color: var(--pine); }
+    .line-quote figcaption { margin-top: .3rem; color: var(--muted); font-size: .9rem; }
+    .roles { margin-top: 1.5rem; }
+    .roles > div {
+      display: grid;
+      grid-template-columns: 4.25rem 1fr;
+      gap: .9rem;
+      padding-block: .84rem;
+      border-top: 1px solid var(--line);
+    }
+    .roles dt { color: var(--pine); font-weight: 750; }
+    .cost { margin-top: 1.55rem; padding: 1rem 1.2rem; background: #ebe2cf; border-radius: .55rem; }
+    .cost strong { color: #573823; font: 700 1.6rem/1 var(--serif); }
+
+    .flow-wrap { background: #e8ebdf; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.1rem;
+      list-style-position: inside;
+      padding: 0;
+      margin-top: 1.75rem;
+    }
+    .steps li {
+      border-top: 2px solid #819b83;
+      padding-top: .9rem;
+    }
+    .steps li::marker { font-weight: 750; color: var(--pine); }
+    .steps strong { color: var(--ink); }
+    .steps p { margin-top: .42rem; }
+    .rules-note { margin-top: 1.12rem; font-size: .94rem; }
+    .ops {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(1.25rem, 5vw, 4rem);
+      margin-top: 2.45rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    details summary { cursor: pointer; color: var(--pine); font-weight: 750; }
+    details p { margin-top: .75rem; }
+    details p + p { margin-top: .55rem; }
+
+    .progress {
+      background: radial-gradient(ellipse at 90% 20%, #294939, transparent 65%), var(--night);
+    }
+    .progress h2, .progress h3 { color: var(--light); }
+    .progress p, .progress dd, .progress small { color: var(--muted-light); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.1rem;
+      margin-top: 1.75rem;
+    }
+    .stats > div { border-top: 1px solid #abc8a07f; padding-block: .82rem 1rem; }
+    .stats dt { font: 700 clamp(2.5rem, 5vw, 4rem)/1.12 Georgia, serif; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .stats dd { margin-top: .3rem; }
+    .trend {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 1.2rem;
+      margin-block: 1.15rem .9rem;
+      padding: .9rem 1.1rem;
+      background: #e4efdc0d;
+      border: 1px solid var(--dark-line);
+      border-radius: .55rem;
+    }
+    .trend strong { color: var(--accent); font-size: 1.45rem; font-variant-numeric: tabular-nums; }
+    .source { display: block; max-width: 66rem; margin-top: .75rem; font-size: .84rem; }
+
+    .future .lead { max-width: 49rem; }
+    .plans {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem 3.1rem;
+      margin-top: 1.85rem;
+    }
+    .plans > div { border-top: 1px solid var(--line); padding-top: .95rem; }
+    .plans dt { font-weight: 750; color: var(--pine); }
+    .plans dd { margin-top: .4rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.05rem; margin-top: 1.7rem; }
+    .team-grid > article {
+      border-top: 1px solid var(--line);
+      padding-top: .95rem;
+    }
+    .team-grid h3 { margin-bottom: .27rem; }
+    .team-grid p { color: var(--muted); }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid var(--line);
+      padding-block: 1.25rem;
+      font-size: .92rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 64rem) {
+      .shell { width: calc(100% - 4rem); }
+      .hero { min-height: auto; }
+      .brand-art { min-height: 23rem; }
+      nav { gap: .4rem 1.15rem; }
+    }
+    @media (max-width: 52rem) {
+      .shell { width: calc(100% - 2.4rem); }
+      .topbar { padding-block: .72rem; min-height: 4.25rem; }
+      .topbar .latin { display: none; }
+      .hero, .split { grid-template-columns: 1fr; }
+      .hero { padding-block: 2.55rem 2rem; gap: 2.2rem; }
+      .brand-art { min-height: 20rem; }
+      h1 { font-size: clamp(3rem, 9vw, 4.7rem); }
+      .steps, .stats { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 37rem) {
+      .topbar { flex-wrap: wrap; gap: .6rem; }
+      nav { width: 100%; flex-wrap: wrap; padding-bottom: .15rem; }
+      .ops, .plans { grid-template-columns: 1fr; gap: 1rem; }
+      .team-grid { grid-template-columns: 1fr; gap: .85rem; }
+      .brand-art { min-height: 17rem; }
+      .footer { align-items: flex-start; font-size: .86rem; }
+      .footer a { flex: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .seal { animation: none; }
+      .cta { transition: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <svg class="symbol-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="wenqiao-mark" viewBox="0 0 648 564">
+      <path d="M 439,359 L 430,364 L 428,368 L 405,384 L 379,413 L 372,418 L 315,487 L 277,537 L 406,537 L 423,535 L 443,529 L 455,523 L 469,513 L 478,504 L 488,490 L 494,478 L 499,462 L 501,449 L 496,446 L 493,440 L 484,430 L 464,398 L 458,392 L 454,383 Z" fill="#7B9E8A"/>
+  <path d="M 255,103 L 255,108 L 249,109 L 249,113 L 244,114 L 245,127 L 242,128 L 244,139 L 267,154 L 300,162 L 376,163 L 406,166 L 432,175 L 443,185 L 453,207 L 457,231 L 457,387 L 461,394 L 467,397 L 467,402 L 489,434 L 494,437 L 498,447 L 501,447 L 500,221 L 492,184 L 477,155 L 463,139 L 448,128 L 411,114 L 373,109 L 297,107 Z" fill="#5C3A1E"/>
+  <path d="M 450,232 L 414,234 L 213,282 L 213,291 L 250,286 L 260,287 L 260,328 L 256,332 L 253,381 L 272,381 L 269,331 L 264,325 L 264,286 L 272,283 L 312,279 L 313,285 L 309,302 L 314,312 L 314,319 L 301,346 L 314,352 L 315,371 L 320,380 L 322,392 L 327,395 L 345,395 L 364,391 L 372,415 L 375,415 L 404,383 L 427,367 L 424,348 L 424,264 L 450,260 Z" fill="#5C3A1E"/>
+  <path d="M 146,166 L 141,171 L 132,171 L 130,176 L 130,186 L 124,188 L 117,294 L 114,393 L 115,433 L 121,463 L 127,478 L 134,477 L 137,484 L 141,484 L 142,478 L 146,478 L 148,481 L 156,480 L 157,484 L 161,484 L 166,471 L 167,460 L 172,459 L 173,468 L 170,486 L 172,486 L 180,461 L 184,427 L 177,232 L 171,184 L 167,184 L 165,182 L 165,174 L 162,169 L 156,169 L 153,166 Z" fill="#5C3A1E"/>
+  <path d="M 172,66 L 170,69 L 169,69 L 166,72 L 165,72 L 165,74 L 164,76 L 161,79 L 158,79 L 151,86 L 150,86 L 148,88 L 148,92 L 146,93 L 146,100 L 149,106 L 162,119 L 163,119 L 167,123 L 168,123 L 176,130 L 177,130 L 180,133 L 181,133 L 184,136 L 185,136 L 189,140 L 190,140 L 205,154 L 205,155 L 209,159 L 209,160 L 213,165 L 217,173 L 217,175 L 218,177 L 220,177 L 221,176 L 221,169 L 222,168 L 222,156 L 221,155 L 221,144 L 220,143 L 220,137 L 219,136 L 219,132 L 218,131 L 218,127 L 217,126 L 217,122 L 216,121 L 216,118 L 215,117 L 215,115 L 214,114 L 214,112 L 213,111 L 213,109 L 212,108 L 211,103 L 209,100 L 209,98 L 204,88 L 202,86 L 199,80 L 190,70 L 189,70 L 187,68 L 183,66 Z" fill="#5C3A1E"/>
+  <path d="M 576,227 L 560,227 L 559,228 L 538,228 L 537,229 L 515,229 L 514,230 L 507,230 L 507,252 L 510,252 L 511,251 L 517,251 L 518,250 L 523,250 L 524,249 L 530,249 L 531,248 L 537,248 L 538,247 L 543,247 L 544,246 L 550,246 L 551,245 L 557,245 L 558,244 L 564,244 L 565,243 L 571,243 L 572,242 L 576,242 Z" fill="#5C3A1E"/>
+    </symbol>
+  </svg>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="dark">
+    <div class="shell topbar">
+      <a class="lockup" href="#top" aria-label="问樵首页">
+        <span class="mark-chip"><svg aria-hidden="true"><use href="#wenqiao-mark"></use></svg></span>
+        <span class="brand-name">问樵</span><span class="latin" aria-hidden="true">WENQIAO</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#about">关于问樵</a>
+        <a href="#how">撮合流程</a>
+        <a href="#progress">运营进展</a>
+        <a href="#future">接下来</a>
+        <a href="#team">开发团队</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="dark hero-area">
+      <section class="shell hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">一个和人有关的平台</p>
+          <h1 id="hero-title">人的价值，<span>会逐渐显现。</span></h1>
+          <p>问樵让有具体需求的人找到有相关经验的人。每个人都可以在这里分享自己的兴趣与所长，帮到别人，也收获属于自己的那份回报。</p>
+          <a class="cta" href="#how">看看问樵怎么用</a>
+        </div>
+        <figure class="brand-art">
+          <div class="seal">
+            <svg role="img" aria-labelledby="mark-title">
+              <title id="mark-title">问樵标志</title>
+              <use href="#wenqiao-mark"></use>
+            </svg>
+          </div>
+          <figcaption><strong>问樵</strong><span class="latin">WENQIAO</span></figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section id="about" class="shell section split" aria-label="关于问樵">
+      <div>
+        <h2>什么是问樵？</h2>
+        <p class="lead">问樵是上海问樵网络科技有限公司开发的需求撮合平台，目前以微信小程序为入口。“问樵”也是一个动作，向做过这件事的人请教。</p>
+        <figure class="line-quote">
+          <blockquote>入山问樵，入水问渔</blockquote>
+          <figcaption>明 · 庄元臣《叔苴子》</figcaption>
+        </figure>
+        <dl class="roles">
+          <div><dt>问者</dt><dd>发布需求，写清自己想学什么，或需要怎样的帮助。</dd></div>
+          <div><dt>樵者</dt><dd>筛选合适的需求，凭自己的经验和能力投递简历。</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h2>为什么要做问樵？</h2>
+        <p class="lead">从家教场景出发，我们发现，许多辅导者为了赚取生活费，要先翻微信群找单，再私聊中介问价。有些需求只有先交信息费，才能联系家长。</p>
+        <p class="cost">项目介绍提到，有些需求的信息费可达单次辅导收入的 <strong>5 倍</strong>，甚至更多。</p>
+        <p class="lead">问樵把分散的需求搬到一个可公开展示、筛选和申请的地方，减少获取联系方式时的信息差。</p>
+      </div>
+    </section>
+
+    <div class="flow-wrap">
+      <section id="how" class="shell section" aria-labelledby="how-title">
+        <h2 id="how-title">一次撮合如何完成？</h2>
+        <p class="lead">问者发布需求，樵者申请帮助。问樵跟进从审核到双方确认的每一步，并记录每位用户完成的需求数。</p>
+        <ol class="steps">
+          <li><strong>填写与审核</strong><p>问者写清需求，樵者填写简历。两类信息都经 AI 预审和人工终审，退回后可以修改。</p></li>
+          <li><strong>发布与申请</strong><p>需求审核通过后可发布。樵者筛选合适的需求，使用通过审核的简历提出申请。</p></li>
+          <li><strong>接受与联系</strong><p>问者接受申请后能直接查看樵者的联系方式，双方可自行沟通。申请进度可查。</p></li>
+          <li><strong>双方确认</strong><p>樵者发起确认后，问者须在 7 天内答复。两个人都确认，才算匹配成功。</p></li>
+        </ol>
+        <p class="rules-note">按项目介绍中的规则，个人需求的撮合流程免费。机构发布需求时，可以单独声明信息费等规则。</p>
+        <div class="ops">
+          <details open>
+            <summary>审核和跟进细节</summary>
+            <p>AI 预审会给出评分和问题标签。预审失败转人工，每次终审留有记录。</p>
+            <p>平台在接受申请和待确认时提醒。超时后保留申请记录，归入「已忽略」。恢复跟进后，樵者可以重新发起确认。</p>
+          </details>
+          <details open>
+            <summary>管理端如何运作</summary>
+            <p>管理端处理审核与举报，保留操作日志和 AI 预审失败记录，供团队追查异常。</p>
+            <p>数据库支持定时备份、云端副本、文件完整性校验和保留期清理。启用情况取决于部署配置。</p>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <div class="dark progress">
+      <section id="progress" class="shell section" aria-labelledby="progress-title">
+        <h2 id="progress-title">问樵走到了哪一步？</h2>
+        <p class="lead">问樵通过小红书推广，以微信小程序承接需求和申请。项目介绍时仍处于免费推广阶段，优先在大学生群体中建立认知。</p>
+        <dl class="stats">
+          <div><dt>9,023</dt><dd>名小程序累计用户</dd></div>
+          <div><dt>79</dt><dd>条需求正在公开展示</dd></div>
+          <div><dt>634</dt><dd>份累计申请，其中 16 份获接受</dd></div>
+          <div><dt>1</dt><dd>项需求完成双方确认</dd></div>
+        </dl>
+        <div class="trend">
+          <strong>+49%</strong>
+          <p>2026 年 9 月 30 日至 11 月 18 日，累计用户由 6,046 人增至 9,023 人。11 月 16 日至 18 日新增 1,833 人。</p>
+        </div>
+        <small class="source">数据来自问樵项目介绍中的微信小程序后台与管理端。累计用户走势截至 2026 年 11 月 18 日。9,023 名累计用户、公开需求、申请和双方确认以 11 月 19 日的项目介绍为准。累计用户涵盖所有来源，申请数按未删除记录统计，双方确认按需求去重。</small>
+      </section>
+    </div>
+
+    <section id="future" class="shell section future" aria-labelledby="future-title">
+      <h2 id="future-title">问樵接下来想做什么？</h2>
+      <p class="lead">在 AI 时代，人的价值会逐渐显现。这里有樵者，也有问者。我们想从家教出发，走向教育、体育培训和技能培训，让每个人都有机会分享自己的兴趣与所长。</p>
+      <dl class="plans">
+        <div><dt>开发独立 App</dt><dd>计划覆盖 iOS 与 Android。</dd></div>
+        <div><dt>推进商业化</dt><dd>探索投币支持、邀请码、撮合抽成和审核收费。撮合抽成以 Airbnb 为参考。</dd></div>
+        <div><dt>完善底层设施</dt><dd>优化服务器与部署环境。</dd></div>
+        <div><dt>统一对外品牌</dt><dd>统一使用品牌标志、字体和对外物料。</dd></div>
+      </dl>
+      <p class="lead">如果获得新增资金，问樵计划加快产品研发、场景拓展和撮合运营。</p>
+    </section>
+
+    <section id="team" class="shell section divider" aria-labelledby="team-title">
+      <h2 id="team-title">开发团队</h2>
+      <p class="lead">两位开发成员是同一宿舍的同学，项目介绍时均在东华大学生物与医学工程系读大四。</p>
+      <div class="team-grid">
+        <article><h3>徐以达 Adam Xu</h3><p>商业与运营</p></article>
+        <article><h3>钱李炜 Leo Qian</h3><p>技术与开发</p></article>
+        <article><h3>樵博士 Dr. Qiao</h3><p>问樵吉祥物</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <div class="lockup">
+      <span class="mark-chip"><svg aria-hidden="true"><use href="#wenqiao-mark"></use></svg></span>
+      <span>上海问樵网络科技有限公司</span>
+    </div>
+    <a href="#top">回到顶部</a>
+  </footer>
+</body>
+</html>
